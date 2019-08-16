@@ -1,0 +1,25 @@
+# cockpit session name
+app.name: CITRINE-FRONT
+
+# cockpit session name
+session.name: citrine_front
+
+# define the languages you want to manage
+languages:
+    en: English
+    vi: Vietnamese
+
+# security key
+sec-key: PTE2KIkBUqsV34U6FwzgGfEXEqBWgj    
+
+# use smtp to send emails
+mailer:
+    from      : info@mydomain.tld
+    transport : smtp
+    host      : smtp.myhost.tld
+    user      : username
+    password  : xxpasswordxx,
+    port      : 25,
+    auth      : true,
+    encryption: '' # '', 'ssl' or 'tls'
+    

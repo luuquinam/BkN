@@ -1,0 +1,49 @@
+# cockpit session name
+app.name: Vietjet Air
+
+# cockpit session name
+session.name: vietjetair
+
+# define the languages you want to manage
+languages:
+    en: English
+    vi: Vietnamese
+
+# security key
+sec-key: 3y123vmoIjFF509s0cpJSFHgD95s3S    
+
+# define additional groups
+groups:
+    editor:
+        $admin: false
+        $vars:
+            finder.path: /upload
+        cockpit:
+            backend: true
+            finder: true
+        collections:
+            manage: true
+        forms:
+            manage: true
+        regions:
+            manage: true
+        singletons:
+            manage: true            
+
+# use smtp to send emails
+mailer:
+    from      : info@mydomain.tld
+    transport : smtp
+    host      : smtp.gmail.com
+    user      : nhocson6224@gmail.com
+    password  : thaisonc9ct10,
+    port      : 587,
+    auth      : true,
+    encryption: 'tls' # '', 'ssl' or 'tls'
+
+database:    
+    server: mysql://112.213.84.94
+    options:
+        db      : admin_vj
+        username: admin_vju
+        password: @Aa123456
