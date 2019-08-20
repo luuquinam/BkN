@@ -15,7 +15,7 @@
 
   function dialog(cm, text, shortText, deflt, f) {
     if (cm.openDialog) cm.openDialog(text, f, {value: deflt, selectValueOnOpen: true});
-    else f(prompt(shortText, deflt));
+    // else f(prompt(shortText, deflt));
   }
 
   var jumpDialog =

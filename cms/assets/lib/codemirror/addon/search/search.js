@@ -69,12 +69,12 @@
 
   function dialog(cm, text, shortText, deflt, f) {
     if (cm.openDialog) cm.openDialog(text, f, {value: deflt, selectValueOnOpen: true});
-    else f(prompt(shortText, deflt));
+    // else f(prompt(shortText, deflt));
   }
 
   function confirmDialog(cm, text, shortText, fs) {
     if (cm.openConfirm) cm.openConfirm(text, fs);
-    else if (confirm(shortText)) fs[0]();
+    // else if (confirm(shortText)) fs[0]();
   }
 
   function parseString(string) {
