@@ -428,11 +428,11 @@
                     break;
                 case 'IFRAME':
 
-                    if (!this.options.videomute) {
-                        media[0].contentWindow.postMessage('{ "event": "command", "func": "unmute", "method":"setVolume", "value":1}', '*');
-                    }
+                    // if (!this.options.videomute) {
+                    //     media[0].contentWindow.postMessage('{ "event": "command", "func": "unmute", "method":"setVolume", "value":1}', '*');
+                    // }
 
-                    media[0].contentWindow.postMessage('{ "event": "command", "func": "playVideo", "method":"play"}', '*');
+                    // media[0].contentWindow.postMessage('{ "event": "command", "func": "playVideo", "method":"play"}', '*');
                     break;
             }
         },
@@ -444,7 +444,7 @@
                     media[0].pause();
                     break;
                 case 'IFRAME':
-                    media[0].contentWindow.postMessage('{ "event": "command", "func": "pauseVideo", "method":"pause"}', '*');
+                    // media[0].contentWindow.postMessage('{ "event": "command", "func": "pauseVideo", "method":"pause"}', '*');
                     break;
             }
         },
@@ -456,7 +456,7 @@
                     media[0].muted = true;
                     break;
                 case 'IFRAME':
-                    media[0].contentWindow.postMessage('{ "event": "command", "func": "mute", "method":"setVolume", "value":0}', '*');
+                    // media[0].contentWindow.postMessage('{ "event": "command", "func": "mute", "method":"setVolume", "value":0}', '*');
                     break;
             }
         }
