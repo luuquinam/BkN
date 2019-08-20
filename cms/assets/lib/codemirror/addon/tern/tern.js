@@ -592,8 +592,8 @@
   function dialog(cm, text, f) {
     if (cm.openDialog)
       cm.openDialog(text + ": <input type=text>", f);
-    else
-      f(prompt(text, ""));
+    // else
+    //   f(prompt(text, ""));
   }
 
   // Tooltips

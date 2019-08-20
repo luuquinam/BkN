@@ -3861,7 +3861,7 @@
             selectValueOnOpen: false});
       }
       else {
-        onClose(prompt(shortText, ''));
+        // onClose(prompt(shortText, ''));
       }
     }
     function splitBySlash(argString) {
@@ -4055,7 +4055,7 @@
         cm.openNotification('<span style="color: red">' + text + '</span>',
                             {bottom: true, duration: 5000});
       } else {
-        alert(text);
+        // alert(text);
       }
     }
     function makePrompt(prefix, desc) {

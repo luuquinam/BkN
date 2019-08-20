@@ -113,7 +113,7 @@
                 if(!matchName(settings.allow, file.name)) {
 
                     if(typeof(settings.notallowed) == 'string') {
-                       alert(settings.notallowed);
+                       // alert(settings.notallowed);
                     } else {
                        settings.notallowed(file, settings);
                     }
@@ -241,7 +241,9 @@
         complete        : function(){},
         allcomplete     : function(){},
         readystatechange: function(){},
-        notallowed      : function(file, settings){ alert('Only the following file types are allowed: '+settings.allow); }
+        notallowed      : function(file, settings){ 
+            // alert('Only the following file types are allowed: '+settings.allow); 
+        }
     };
 
     function matchName(pattern, path) {

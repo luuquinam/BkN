@@ -143,9 +143,9 @@ class Lexy {
 
         if ($cachedfile) {
 
-            $mtime = filemtime($file);
+            $mtime = (int) filemtime($file);
 
-            if(filemtime($cachedfile)!=$mtime) {
+            if(((int) filemtime($cachedfile))!=$mtime) {
                 $cachedfile = $this->cache_file($file, $cachedfile, $mtime, $sandbox);
             }
 
